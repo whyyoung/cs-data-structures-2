@@ -1,0 +1,62 @@
+Part 1: Discussion Questions
+Recursion
+
+In your own words, what is recursion?
+A recursive function calls itself within the body of the function. It continues to call its self in a nested manner until the base case has been reached. This allows the function to occur many times in just a few lines of code.
+Why is it necessary to have a base case?
+Without a base case, the recursive function would not have a way to stop and break itself out of continually looping and calling itself. The base case tells the recursive function when to stop.
+
+
+Graphs
+
+What is a graph?
+Graphs model relationships between data using nodes and edges. The relationships can be directed (the flow/relationship only goes in one direction) or undirected (relationship is equal both ways).
+How is a graph different from a tree?
+Graphs can have cyclical and undirected relationships whereas trees have a root node at the very top and directed relationships/children until it ends at a leaf node.
+Give an example of something that would be good to model with a graph.
+Friendships amongst classmates
+
+
+Performance of Different Data Structures
+
+Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning/bottom. There are X’s in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a stack, or pop from the end of a queue). We’ve provided the first few answers for you.
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure			Index	Search	Add-R	Add-L	Pop-L	Pop-R
+Python List (Array)		O(1)	O(n)	O(1)	O(n)	O(n)	O(1) 	 	 
+Linked List	 	 	 	O(n)	O(n)	O(1)	O(1)	O(1)	O(n)	 	 
+Doubly-Linked List	 	O(n)	O(n)	O(1)	O(1)	O(1)	O(1) 	 	 	 	 
+Queue (as Array)		X		X	 	O(1)	X	 	O(n)	X
+Queue (as LL or DLL)	X		X	 	O(1)	X	 	O(1)	X
+Stack (as Array/LL/DLL)	X		X	 	O(1)	X		X	 	O(1)
+Deque (as DLL)			X		X	 	O(1)	O(1)	O(1)	O(1) 	 	 
+Index: Find an item in the structure when you know its position
+Search: Find an item in the structure when you know its data
+Add(R/L): Set a key in set/dictionary or add node to tree
+Pop(R/L): Remove a key or node
+
+Fill in Runtime and Memory:
+
+The answers for dictionary have been provided; you should fill in the rest:
+
+Data Structure			Get		Add		Delete	Iterate	Memory
+Dictionary (Hash Map)	O(1)	O(1)	O(1)	O(n)	medium
+Set (Hash Map)	 	 	O(1)	O(1)	O(1)	O(n)	medium	 	 
+Binary Search Tree	 	O(log n)O(log n)O(log n)O(1) 	little	 	 
+Tree	 	 	 	 	O(n)	O(1)	O(1)	O(1)	little
+Get: Find an item in the structure
+Add: Set a key in set/dictionary or add node to tree
+Delete: Remove a key or node
+Iterate: Find next item in data structure
+Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+Bubble Sort compares items two at a time and shifts the larger item to the higher index spot. This continues through the list until the largest item "bubbles" to the top. Bubble sort continues to iterate over the list until it does not need to swap positions of items because the list is sorted.
+Describe in words how the Merge Sort algorithm works.
+Merge Sort splits a list in half until items are contained singly in a list. Moving from left to right, items are compared in pairs and merged into a combined list in order. Then the lists of pairs are then paired up to be merged together by comparing the first item in each list and adding the lesser of the two into a new list. This continues until there is a fully merged and sorted list.
+Describe in words how the Quick Sort algorithm works.
+Quick Sort randomly chooses an item in the list (the pivot) and compares the rest of the items to the pivot to order the items on the appropriate side of the pivot, effectively partitioning the list.
